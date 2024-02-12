@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Sample HTML page</title>
+        
+        <!-- Link to a CSS stylesheet with a <link> element, an empty element that
+            must must have all three of these atrributes. The CSS doesn’t have to be
+            located in the same directory as the HTML (it can even be on a different
+            machine), but if it is in the same folder, you can refer to it with just 
+            the filename. In projects we usually create a subdirectory for our CSS,
+            so that we can find it more easily.
+        -->
+        <link rel="stylesheet" type="text/css" href="Roy_HTMLCSS 1.css" /> <!-- Make sure href = css file name -->
+    </head>
+    <body>
+        <h1>Let's Take A Time Back With Classic Cars</h1>
+        <section>
+            <h2>Description</h2>
+            <p> There are 3 images and names provided of classic cars and they are displayed to admire their beauty. </p>
+        </section>
+        
+        <section>
+            <h2>Below are 3 classic cars and images...</h2>
+            <table>
+                <!-- The header row is a <tr>, just like a data row, but it contains <th> instead of <td> -->
+                <tr>
+                    <th>Car name</th>
+                    
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- The "href" attributes determines where you’ll go when you click -->
+                    <td><a href="https://en.wikipedia.org/wiki/Porsche_911_(classic)">Porsche 911</a></td>
+                   
+                    <!-- <img> elements must have an "alt" attributes, since some users will have visual impairments
+                    the prevent them from seeing images
+                    -->
+                    <td><img src="./Sample HTML page_files/Porsche 911" alt="[Older Porsche 911]" /></td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/BMW_2_Series">BMW 228 GTS</a></td>
+ 
+                    <td><img src="./Sample HTML page_files/228 GTS.jpeg" alt="[BMW 228 GTS]" /></td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/Mercedes-Benz_300_SL">Mercedes 300 SL Gullwing</a></td>
+                    <td><img src="./Sample HTML page_files/300 SL Gullwing.jpeg" alt="[300 SL Gullwing]" /></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
