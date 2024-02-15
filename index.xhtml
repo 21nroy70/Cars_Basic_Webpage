@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Sample HTML page</title>
         
-        <!-- Link to a CSS stylesheet with a <link> element, an empty element that
-            must must have all three of these atrributes. The CSS doesn’t have to be
-            located in the same directory as the HTML (it can even be on a different
-            machine), but if it is in the same folder, you can refer to it with just 
-            the filename. In projects we usually create a subdirectory for our CSS,
-            so that we can find it more easily.
-        -->
-        <link rel="stylesheet" type="text/css" href="Roy_HTMLCSS 1.css" /> <!-- Make sure href = css file name -->
+        <title>Classic Cars Collection</title>
+        <link rel="stylesheet" type="text/css" href="Roy_HTMLCSS 2.css" />
     </head>
     <body>
-        <h1>Let's Take A Time Back With Classic Cars</h1>
-        <section>
-            <h2>Description</h2>
-            <p> There are 3 images and names provided of classic cars and they are displayed to admire their beauty. </p>
-        </section>
+        <header>
+            <h1>Classic Cars Collection</h1>
+        </header>
         
-        <section>
-            <h2>Below are 3 classic cars and images...</h2>
-            <table>
-                <!-- The header row is a <tr>, just like a data row, but it contains <th> instead of <td> -->
-                <tr>
-                    <th>Car name</th>
-                    
-                    <th></th>
-                </tr>
-                <tr>
-                    <!-- The "href" attributes determines where you’ll go when you click -->
-                    <td><a href="https://en.wikipedia.org/wiki/Porsche_911_(classic)">Porsche 911</a></td>
-                   
-                    <!-- <img> elements must have an "alt" attributes, since some users will have visual impairments
-                    the prevent them from seeing images
-                    -->
-                    <td><img src="./Porsche 911" alt="[Older Porsche 911]" /></td>
-                </tr>
-                <tr>
-                    <td><a href="https://en.wikipedia.org/wiki/BMW_2_Series">BMW 228 GTS</a></td>
- 
-                    <td><img src="./228 GTS.jpeg" alt="[BMW 228 GTS]" /></td>
-                </tr>
-                <tr>
-                    <td><a href="https://en.wikipedia.org/wiki/Mercedes-Benz_300_SL">Mercedes 300 SL Gullwing</a></td>
-                    <td><img src="./300 SL Gullwing.jpeg" alt="[300 SL Gullwing]" /></td>
-                </tr>
-            </table>
-        </section>
+        <nav>
+            <ul>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#cars">Classic Cars</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="description">
+                <h2>Description</h2>
+                <p>There are 3 images and names provided of classic cars and they are displayed to admire their beauty.</p>
+            </section>
+            
+            <section id="cars">
+                <h2>Classic Cars</h2>
+                <article>
+                    <h3>Porsche 911</h3>
+                    <a href="https://en.wikipedia.org/wiki/Porsche_911_(classic)">
+                        <img src="Porsche 911" alt="Porsche 911" />
+                    </a>
+                    <p>The Porsche 911 is a timeless classic known for its iconic design and outstanding performance.</p>
+                </article>
+                
+                <article>
+                    <h3>BMW 228 GTS</h3>
+                    <a href="https://en.wikipedia.org/wiki/BMW_2_Series">
+                        <img src="228 GTS.jpeg" alt="BMW 228 GTS" />
+                    </a>
+                    <p>The BMW 228 GTS combines luxury and performance in a sleek package.</p>
+                </article>
+                
+                <article>
+                    <h3>Mercedes 300 SL Gullwing</h3>
+                    <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_300_SL">
+                        <img src="300 SL Gullwing.jpeg" alt="Mercedes 300 SL Gullwing" />
+                    </a>
+                    <p>The Mercedes 300 SL Gullwing is a true legend of automotive engineering.</p>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <p> 2024 Classic Cars Collection. All rights reserved.</p>
+        </footer>
     </body>
+
 </html>
